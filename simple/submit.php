@@ -20,6 +20,12 @@ if(strlen($_POST['comment'] == 0)){
     <title>Simple Page</title>
 </head>
 <body>
-
+<?php
+if($success){
+    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
+}else{
+    echo '<h1>エラー</h1><p>'.$err_message.'</p>';
+}
+?>
 </body>
 </html>

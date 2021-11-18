@@ -1,5 +1,10 @@
 html{
     min-height:100vh;
+    --main-bg-color:#339773;
+    --sub-bg-color:#c2e192;
+    --accent-color:#d3c59e;
+    --accent-2-color:#e7cdbf;
+    --accent-3-color:#c1917f;
 }
 body{
     margin:0;

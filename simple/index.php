@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<form action="submit.php" method="post">
+<div id="m_container">
+<form action="submit.php" method="post" id="m_item">
     <input type="text" name="comment" placeholder="何かコメントを入力">
     <input type="submit" value="送信">
 </form>
-</main>
+</div>
 </body>
 </html>

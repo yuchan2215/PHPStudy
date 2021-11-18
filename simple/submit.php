@@ -17,12 +17,16 @@ if(!array_key_exists('comment',$_POST)){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php
-if($success == true){
-    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
-}else{
-    echo '<h1>エラー</h1><p>'.$err_message.'</p>';
-}
-?>
+<div id="m_container">
+    <div id="m_item">
+    <?php
+    if($success == true){
+        echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
+    }else{
+        echo '<h1>エラー</h1><p>'.$err_message.'</p>';
+    }
+    ?>
+    </div>
+</div>
 </body>
 </html>

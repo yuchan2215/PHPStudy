@@ -1,1 +1,1 @@
-<footer><p></p></footer>
+<footer><p>v1.2</p></footer>

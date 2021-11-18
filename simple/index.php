@@ -11,7 +11,7 @@
     <div class="input_box">
         <input type="text" name="comment" placeholder="何かコメントを入力">
     </div>
-    <div class="input_box">
+    <div class="input_box right_box">
         <input type="submit" value="送信">
     </div>
 </form>

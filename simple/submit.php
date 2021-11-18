@@ -25,7 +25,9 @@ checkData("mail");
 if($success == true){
     echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
 }else{
-    echo '<h1>エラー</h1><p>'.$err_message.'</p>';
+    foreach($err_message as $value){
+        echo '<h1>エラー</h1><p>'.$value.'</p>';
+    }
 }
 ?>
 </body>

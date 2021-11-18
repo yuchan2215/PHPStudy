@@ -23,7 +23,7 @@ checkData("mail");
 <body>
 <?php
 if($success == true){
-    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
+    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p><p>'.htmlspecialchars($_POST['mail']).'</p>';
 }else{
     foreach($err_message as $value){
         echo '<h1>エラー</h1><p>'.$value.'</p>';

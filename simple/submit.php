@@ -12,7 +12,7 @@ function checkData($name){
     }
 }
 checkData("comment");
-checkData("email");
+checkData("mail");
 ?>
 <!DOCTYPE HTML>
 <html lang="ja">

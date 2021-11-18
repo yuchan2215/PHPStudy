@@ -47,3 +47,9 @@ input[type="submit"]{
     border-radius:0.2em;
     padding:0.2em;
 }
+h1{
+    margin:0;
+}
+p{
+    margin:0;
+}

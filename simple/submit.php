@@ -6,6 +6,12 @@ if(!array_key_exists('comment',$_POST)){
     $err_message = "データの入力がありません";
     return;
 }
+//もし文字数が0なら
+if(strlen($_POST['comment'] == 0)){
+    $success = false;
+    $err_message = "データが空白です";
+    return;
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="ja">

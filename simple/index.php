@@ -17,7 +17,7 @@
     <div class="input_box right_box">
         <input type="submit" value="送信">
     </div>
-</form>
+</form><?php include 'footer.php';?>
 </div>
 </body>
 </html>

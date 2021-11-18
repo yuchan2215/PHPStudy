@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="submit.php" method="post">
-    <input type="text" name="comment" placeholder="何かコメントを入力">
-    <input type="email" name="mail" placeholder="xxx@xxx.xx">
-    <input type="submit" value="送信">
+<div id="m_container">
+<form action="submit.php" method="post" id="m_item">
+    <div class="input_box">
+        <input type="text" name="comment" placeholder="何かコメントを入力">
+    </div>
+    <div class="input_box">
+        <input type="email" name="mail" placeholder="xxx@xxx.xx">
+    </div>
+    <div class="input_box right_box">
+        <input type="submit" value="送信">
+    </div>
 </form>
+</div>
+<?php include 'footer.php';?>
 </body>
 </html>

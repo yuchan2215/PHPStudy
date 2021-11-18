@@ -19,16 +19,22 @@ checkData("mail");
 <head>
     <meta charset="UTF-8">
     <title>Simple Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<?php
-if($success == true){
-    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p><p>'.htmlspecialchars($_POST['mail']).'</p>';
-}else{
-    foreach($err_message as $value){
-        echo '<h1>エラー</h1><p>'.$value.'</p>';
+<div id="m_container">
+    <div id="m_item">
+    <?php
+    if($success == true){
+        echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p><p>'.htmlspecialchars($_POST['mail']).'</p>';
+    }else{
+        foreach($err_message as $value){
+            echo '<h1>エラー</h1><p>'.$value.'</p>';
+        }
     }
-}
-?>
+    ?>
+    </div>
+</div>
+<?php include 'footer.php';?>
 </body>
 </html>

@@ -14,6 +14,7 @@ if(!array_key_exists('comment',$_POST)){
 <head>
     <meta charset="UTF-8">
     <title>Simple Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <?php

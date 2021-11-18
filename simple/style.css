@@ -2,9 +2,9 @@
 html{
     font-family: 'Noto Sans JP', sans-serif;
     min-height:100vh;
-    --main-bg-color:#339773;
-    --sub-bg-color:#c2e192;
-    --accent-color:#d3c59e;
+    --main-bg-color:#aaa;
+    --sub-bg-color:#ddd;
+    --accent-color: #7cafaf;
     --accent-2-color:#e7cdbf;
     --accent-3-color:#c1917f;
 }

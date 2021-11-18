@@ -1,4 +1,6 @@
 <?php
+$success = true;
+$err_message = "";
 if(!array_key_exists('comment',$_POST)){
     print "データの入力が不正です";
 }

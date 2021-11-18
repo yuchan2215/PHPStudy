@@ -19,5 +19,7 @@ body{
 }
 #m_item{
     background-color: var(--sub-bg-color);
+    padding:5em;
+    border-radius:1em;
     height:auto;
 }

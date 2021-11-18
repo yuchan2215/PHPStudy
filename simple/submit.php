@@ -1,13 +1,18 @@
 <?php
 $success = true;
-$err_message = "";
-if(!array_key_exists('comment',$_POST)){
-    $success = false;
-    $err_message = "データの入力がありません";
-}elseif(strlen($_POST['comment']) == 0){
-    $success = false;
-    $err_message = "データが空白です";
+$err_message = [];
+function checkData($name){
+    global $success,$err_message;
+    if(!array_key_exists($name,$_POST)){
+        $success = false;
+        array_push($err_message,$name."が存在しません");
+    }elseif(strlen($_POST['comment']) == 0){
+        $success = false;
+        array_push($err_message,$name."が空です。");
+    }
 }
+checkData("comment");
+checkData("mail");
 ?>
 <!DOCTYPE HTML>
 <html lang="ja">
@@ -18,9 +23,11 @@ if(!array_key_exists('comment',$_POST)){
 <body>
 <?php
 if($success == true){
-    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
+    echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p><p>'.htmlspecialchars($_POST['mail']).'</p>';
 }else{
-    echo '<h1>エラー</h1><p>'.$err_message.'</p>';
+    foreach($err_message as $value){
+        echo '<h1>エラー</h1><p>'.$value.'</p>';
+    }
 }
 ?>
 </body>

@@ -33,8 +33,8 @@ checkData("mail");
         }
     }
     ?>
-    </div>>
-    <?php include 'footer.php';?>
-</div
+    </div>
+</div>
+<?php include 'footer.php';?>
 </body>
 </html>

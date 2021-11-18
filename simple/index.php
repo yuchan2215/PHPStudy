@@ -7,6 +7,7 @@
 <body>
 <form action="submit.php" method="post">
     <input type="text" name="comment" placeholder="何かコメントを入力">
+    <input type="email" name="mail" placeholder="xxx@xxx.xx">
     <input type="submit" value="送信">
 </form>
 </body>

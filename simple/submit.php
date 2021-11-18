@@ -2,7 +2,9 @@
 $success = true;
 $err_message = "";
 if(!array_key_exists('comment',$_POST)){
-    print "データの入力が不正です";
+    $success = false;
+    $err_message = "データの入力がありません";
+    return;
 }
 ?>
 <!DOCTYPE HTML>

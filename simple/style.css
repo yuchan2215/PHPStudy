@@ -31,9 +31,10 @@ body{
 .right_box{
     text-align: right;
 }
-input[type="text"]{
+input[type="text"],input[type="email"]{
     box-sizing:border-box;
     width:100%;
+    margin-top:3px;
     font-size:1.1em;
     border:none;
     border-bottom:var(--main-bg-color) solid 2px;

@@ -25,3 +25,12 @@ body{
     border-radius:1em;
     height:auto;
 }
+.input_box{
+    width:100%;
+}
+input[type="text"]{
+    box-sizing:border-box;
+    width:100%;
+}
+input[type="button"]{
+}

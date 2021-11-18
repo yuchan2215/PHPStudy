@@ -38,9 +38,10 @@ input[type="text"]{
     padding:0.5em 0 0.5em 1em;
 }
 input[type="submit"]{
-    background-color: var(--accent-3-color);
+    background-color: var(--accent-color);
+    font-size:1em;
     border:none;
     margin: 0.5em 0.5em 0 auto;
-    border-radius:1em;
-    padding:1em;
+    border-radius:0.2em;
+    padding:0.2em;
 }

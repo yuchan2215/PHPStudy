@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 html{
+    font-family: 'Noto Sans JP', sans-serif;
     min-height:100vh;
     --main-bg-color:#339773;
     --sub-bg-color:#c2e192;

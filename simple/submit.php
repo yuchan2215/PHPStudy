@@ -4,13 +4,9 @@ $err_message = "";
 if(!array_key_exists('comment',$_POST)){
     $success = false;
     $err_message = "データの入力がありません";
-    return;
-}
-//もし文字数が0なら
-if(strlen($_POST['comment'] == 0)){
+}elseif(strlen($_POST['comment']) == 0){
     $success = false;
     $err_message = "データが空白です";
-    return;
 }
 ?>
 <!DOCTYPE HTML>
@@ -21,7 +17,7 @@ if(strlen($_POST['comment'] == 0)){
 </head>
 <body>
 <?php
-if($success){
+if($success == true){
     echo '<h1>実行結果</h1><p>'.htmlspecialchars($_POST['comment']).'</p>';
 }else{
     echo '<h1>エラー</h1><p>'.$err_message.'</p>';
